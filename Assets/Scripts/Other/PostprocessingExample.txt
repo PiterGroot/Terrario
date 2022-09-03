@@ -1,0 +1,8 @@
+  public PostProcessVolume volume;
+    Bloom bloom;
+    
+    void Awake(){
+
+        volume.profile.TryGetSettings(out bloom);
+        bloom.intensity.value = 0.5f;
+    }
